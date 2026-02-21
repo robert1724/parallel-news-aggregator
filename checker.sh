@@ -8,8 +8,8 @@ FULL_SPEEDUPS=(1.40 1.75)
 TIMEOUT_BASE=200
 TESTS=(test_1 test_2 test_3 test_4 test_5)
 
-ROOT_DIR=$(cd "$(dirname "$0")/.." && pwd)
-JAVA_DIR="${ROOT_DIR}/src"
+ROOT_DIR=$(cd "$(dirname "$0")" && pwd)
+JAVA_DIR="${ROOT_DIR}"
 TESTS_DIR="${ROOT_DIR}/checker/input/tests"
 OUT_DIR="${ROOT_DIR}/checker/solution_output"
 EXPECTED_BASE="${ROOT_DIR}/checker/output"
